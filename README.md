@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<Cabinet Veterinar Deva>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
