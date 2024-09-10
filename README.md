@@ -6,10 +6,11 @@
     <meta name="description" content="Moon Veterinary - Cabinet Medical Veterinar. Oferim consultații, vaccinări și tratamente pentru animalele de companie.">
     <meta name="keywords" content="veterinar, consultații animale, deparazitări, vaccinări, tratamente, cabinet veterinar, Deva, animale de companie">
     <title>Moon Veterinary - Cabinet Medical Veterinar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             color: #333;
@@ -18,8 +19,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
         }
         header {
             display: flex;
@@ -33,24 +32,35 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
         }
         nav ul li {
-            display: inline;
             margin-right: 20px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: 500;
+        }
+        .social-icons a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 1.5rem;
         }
         .call-button {
             background-color: #28a745;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+        .call-button:hover {
+            background-color: #218838;
         }
         .hero {
-            background-image: url('(https://pixabay.com/ro/photos/animale-de-companie-pisic%C4%83-c%C3%A2ine-3715733/)'); /* Imagine de fundal */
+            background-image: url('https://via.placeholder.com/1200x600'); /* Fundal real */
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -59,87 +69,124 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
         .btn {
             background-color: #28a745;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        #doctor {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .doctor-profile {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .doctor-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            color: #555;
         }
         .services {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
         }
         .service {
-            background-color: #f0f0f0;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            flex: 1 1 calc(25% - 20px);
-            box-sizing: border-box;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
         }
         .service img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 10px;
+        }
+        #orar {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .orar ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .orar li {
+            margin: 10px 0;
+        }
+        .orar strong {
+            color: #28a745;
+        }
+        #contact {
+            text-align: center;
+            margin-top: 50px;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-        }
-        .contact-form {
-            background-color: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        .contact-form button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav ul {
-                display: flex;
-                flex-direction: column;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            .services {
-                flex-direction: column;
-            }
-            .service {
-                flex: 1 1 100%;
-            }
-            .hero {
-                height: 40vh;
-            }
+            margin-top: 40px;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -154,10 +201,14 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="tel:07322878057" class="call-button">Sună acum</a>
+            <div class="social-icons">
+                <a href="https://m.facebook.com/p/Moon-Veterinary-100083518988337/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/407322287057" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </header>
 
         <section class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h2>Îngrijim prietenii tăi necuvântători din 2022</h2>
                 <p>Consultații și tratamente personalizate pentru animalele tale de companie.</p>
@@ -165,52 +216,22 @@
             </div>
         </section>
 
+        <section id="doctor">
+            <h2>Despre Doamna Doctor</h2>
+            <div class="doctor-profile">
+                <img src="https://exemplu.com/poza-doctor.jpg" alt="Doamna Doctor" class="doctor-img">
+                <h3>Dr. Dancila Alexandra Elena </h3>
+                <p>Medic Veterinar, Specializat în chirurgie veterinară și medicină internă.</p>
+            </div>
+        </section>
+
         <section id="servicii">
             <h2>Servicii oferite</h2>
             <div class="services">
                 <div class="service">
-                    <img src="https://via.placeholder.com/150" alt="Consultații">
+                    <img src="https://via.placeholder.com/150/0000FF/808080?text=Consultatii" alt="Consultații">
                     <h3>Consultații</h3>
                     <p>Consultații complete și personalizate.</p>
                 </div>
                 <div class="service">
-                    <img src="https://via.placeholder.com/150" alt="Deparazitări">
-                    <h3>Deparazitări</h3>
-                    <p>Deparazitări interne și externe.</p>
-                </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/150" alt="Vaccinări">
-                    <h3>Vaccinări</h3>
-                    <p>Vaccinări pentru sănătatea animalelor tale.</p>
-                </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/150" alt="Tratamente">
-                    <h3>Tratamente</h3>
-                    <p>Tratamente adaptate fiecărei situații.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-form">
-            <h2>Contactează-ne</h2>
-            <form action="#" method="post">
-                <label for="name">Nume</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mesaj</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Trimite</button>
-            </form>
-        </section>
-
-        <footer>
-            <p>Ne găsești la: Strada Mihai Eminescu, Bloc B, scara D, Deva, Jud. Hunedoara</p>
-            <p>Telefon: 0732 287 057 | Email: contact@moonveterinary.ro</p>
-        </footer>
-    </div>
-</body>
-</html>
+                    <img src="https://
