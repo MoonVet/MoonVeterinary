@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('path_catre_imagine'); /*C:\Users\RO913196\OneDrive - CCHellenic\Desktop\site\img*/
+            background-image: url('path_catre_imagine'); /*C:\Users\RO913196\OneDrive-CCHellenic\Desktop\site\img\BeagleIMG*/
             background-size: cover;
             background-position: center;
             margin: 0;
