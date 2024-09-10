@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('images/background.png'); /* C:\Users\RO913196\OneDrive - CCHellenic\Desktop\site\img */
+            background-image: url('images/background.jpg'); /* C:\Users\RO913196\OneDrive - CCHellenic\Desktop\moon_veterinary_site\images */
             background-size: cover;
             background-position: center;
             background-color: #f3f3f3; /* Fallback în caz că imaginea nu se încarcă */
