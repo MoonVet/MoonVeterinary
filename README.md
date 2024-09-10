@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Veterinary - Cabinet Medical Veterinar</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('path_catre_imagine'); /*C:\Users\RO913196\OneDrive-CCHellenic\Desktop\site\img\BeagleIMG*/
+            background-image: url('images/background.png'); /* Aici adaugi calea corectă */
             background-size: cover;
             background-position: center;
+            background-color: #f3f3f3; /* Fallback în caz că imaginea nu se încarcă */
             margin: 0;
             padding: 0;
             color: #333;
