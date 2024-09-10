@@ -203,7 +203,7 @@
             </nav>
             <div class="social-icons">
                 <a href="https://m.facebook.com/p/Moon-Veterinary-100083518988337/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/407322287057" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/40732287057" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </header>
 
