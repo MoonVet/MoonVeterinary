@@ -50,7 +50,7 @@
             border-radius: 5px;
         }
         .hero {
-            background-image: url('https://via.placeholder.com/1200x600'); /* Imagine de fundal */
+            background-image: url('(https://pixabay.com/ro/photos/animale-de-companie-pisic%C4%83-c%C3%A2ine-3715733/)'); /* Imagine de fundal */
             background-size: cover;
             background-position: center;
             height: 60vh;
