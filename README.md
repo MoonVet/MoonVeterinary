@@ -7,6 +7,7 @@
     <meta name="keywords" content="veterinar, consultații animale, deparazitări, vaccinări, tratamente, cabinet veterinar, Deva, animale de companie">
     <title>Moon Veterinary - Cabinet Medical Veterinar</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -60,7 +61,7 @@
             background-color: #218838;
         }
         .hero {
-            background-image: url('https://via.placeholder.com/1200x600'); /* Fundal real */
+            background-image: url('https://via.placeholder.com/1200x600'); /* Înlocuiește cu imagine reală */
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -174,6 +175,11 @@
         .orar strong {
             color: #28a745;
         }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
         #contact {
             text-align: center;
             margin-top: 50px;
@@ -186,7 +192,6 @@
             margin-top: 40px;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -203,7 +208,7 @@
             </nav>
             <div class="social-icons">
                 <a href="https://m.facebook.com/p/Moon-Veterinary-100083518988337/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/40732287057" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/407322287057" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </header>
 
@@ -234,4 +239,14 @@
                     <p>Consultații complete și personalizate.</p>
                 </div>
                 <div class="service">
-                    <img src="https://
+                    <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Vaccinari" alt="Vaccinări">
+                    <h3>Vaccinări</h3>
+                    <p>Vaccinări pentru sănătatea animalelor tale.</p>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Deparazitari" alt="Deparazitări">
+                    <h3>Deparazitări</h3>
+                    <p>Deparazitări interne și externe.</p>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/k150/
